@@ -24,6 +24,7 @@ The goal of the project is to build a binary classifier that can accurately pred
 ## Files Description <a name="files"></a>
 
 The files structure is arranged as below:
+
 	- README.md: read me file
 	- Sparkify_Project.ipynb: complete project and code details
 	- ML Pipeline Preparation.ipynb: contains ML pipeline preparation code
@@ -33,7 +34,7 @@ The files structure is arranged as below:
 
 ## Dependencies <a name="Dependencies"></a>
 - PySpark Sql and PySpark ML
-- Python - Numpy, Pandas
+- Numpy, Pandas
 - Matplotlib, Seaborn
 
 ## Results Summary<a name="Summary"></a>
