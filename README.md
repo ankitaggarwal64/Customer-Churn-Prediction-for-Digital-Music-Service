@@ -38,10 +38,12 @@ The files structure is arranged as below:
 - Matplotlib, Seaborn
 
 ## Results Summary<a name="Summary"></a>
-- While comparing the evaluation metrics, we clearly see with logistic regression, the F1 score actually improved significantly from 0.09 to 0.42 when we considered the weight of classes to deal with the imbalance present in our data.
-- Among the tree-based models, Gradient Boosted trees performed actually performed better than Random forest. However, we have not considered probability thresholds and class weights until now with Gradient Boosted trees and Random forest which can further improve these models' performance. The default threshold of 0.5 is considered right now to calculating F1 scores for Gradient Boosted trees and Random forest.
-- Different models are suggesting different importances for different features. Some of the important features we find put accross models are the average number of sessions per day, the fraction of submit downgrade activity, and user age. 
-- One of the probable reasons for overall weak F1 performance among models can be because of the size of the data considered. Modeling with a larger dataset can stabilize and can show the actual performance of the models.
+- Based on the above modeling, we searched for the models with the best parameters with the help of grid search cross-validation and further trained these models on train data and predicted the customer churn labels for test data. 
+- While comparing the evaluation metrics, we can clearly see that f1 score of the logistic regression and random forest improved significantly when we considered the weight of classes to deal with the imbalance present in our data. 
+- Among the tree-based models, Random forest with considering class weights performed better than gradient boostin based on the parameters we have considered until now. Another area for improvement we have not considered until now is tuning with probability threshold. The default threshold of 0.5 is considered right now to calculating F1 scores for all considered models. 
+- Different models are suggesting different importances for different features. Looking at feature importance plots, some of the important features are the average number of sessions per day, the fraction of submit downgrade activity, and user age.
+- Among all the models builds on this small dataset, we see that logistic regression when considered with class weights ranked first in terms of f1 performance. This might be because of the parametric nature of the logistic regression which requires less data for training as compared to non-parametric tree based models. This performance ranking of models can change when we train with bigger size of dataset.
+- One of the probable reasons for overall weak F1 performance among models can be because of the size of data considered. Modeling with a larger dataset can stabilize and can show the actual performance of the models.
 
 ![alt text](https://github.com/ankitaggarwal64/Customer-Churn-Prediction-for-Digital-Music-Service-with-PySpark/blob/main/results_summary.PNG)
   
