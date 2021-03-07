@@ -38,7 +38,7 @@ The files structure is arranged as below:
 - Matplotlib, Seaborn
 
 ## Results Summary<a name="Summary"></a>
-- Based on the above modeling, we searched for the models with the best parameters with the help of grid search cross-validation and further trained these models on train data and predicted the customer churn labels for test data. 
+- Based on the modeling in this project, we searched for the models with the best parameters with the help of grid search cross-validation and further trained these models on train data and predicted the customer churn labels for test data. 
 - While comparing the evaluation metrics, we can clearly see that f1 score of the logistic regression and random forest improved significantly when we considered the weight of classes to deal with the imbalance present in our data. 
 - Among the tree-based models, Random forest with considering class weights performed better than gradient boostin based on the parameters we have considered until now. Another area for improvement we have not considered until now is tuning with probability threshold. The default threshold of 0.5 is considered right now to calculating F1 scores for all considered models. 
 - Different models are suggesting different importances for different features. Looking at feature importance plots, some of the important features are the average number of sessions per day, the fraction of submit downgrade activity, and user age.
