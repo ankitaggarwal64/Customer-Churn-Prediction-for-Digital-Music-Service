@@ -1,5 +1,4 @@
-# Churn Prediction for Music Streaming Service(with PySpark)
-
+# Churn Prediction for Music Streaming Service
 
 ### Table of Contents
 
