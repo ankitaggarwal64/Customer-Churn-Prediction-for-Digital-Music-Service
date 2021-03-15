@@ -28,7 +28,6 @@ The files structure is arranged as below:
 	- README.md: read me file
 	- Sparkify_Project.ipynb: complete project code with subset of data
 	- Sparkify_Project_BigData.ipynb: complete project code with complete data
-	- ML Pipeline Preparation.ipynb: contains ML pipeline preparation code
 	- history_and_prediction_horizon.png: image for explaining event history and prediction horizon
 	- results_summary : snapshot of best model results summary with subset of data 
 	- results_summary_BigData : snapshot of best model results summary with complete data
