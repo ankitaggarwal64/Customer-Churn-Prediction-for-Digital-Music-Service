@@ -47,7 +47,7 @@ The files structure is arranged as below:
 
 ![alt text](https://github.com/ankitaggarwal64/Customer-Churn-Prediction-for-Digital-Music-Service-with-PySpark/blob/main/results_summary.PNG)
   
-## Results Summary complete datals.
+## Results Summary with complete data
 - Based on training with complete data(12GB and 26M rows), our performance metric F1 improved for all models. The Gradient boosted trees performed best with F1 score of 0.55.
 
 ![alt text](https://github.com/ankitaggarwal64/Customer-Churn-Prediction-for-Digital-Music-Service-with-PySpark/blob/main/results_summary_BigData.PNG)
