@@ -37,8 +37,8 @@ The files structure is arranged as below:
 - Numpy, Pandas
 - Matplotlib, Seaborn
 
-## Results Summary<a name="Summary"></a>
-- Based on the modeling in this project, we searched for the models with the best parameters with the help of grid search cross-validation and further trained these models on train data and predicted the customer churn labels for test data. 
+## Results Summary with subset of data<a name="Summary"></a>
+- Based on the modeling with subset(2%) of our data, we searched for the models with the best parameters with the help of grid search cross-validation and further trained these models on train data and predicted the customer churn labels for test data. 
 - While comparing the evaluation metrics, we can clearly see that f1 score of the logistic regression and random forest improved significantly when we considered the weight of classes to deal with the imbalance present in our data. 
 - Among the tree-based models, Random forest with considering class weights performed better than gradient boostin based on the parameters we have considered until now. Another area for improvement we have not considered until now is tuning with probability threshold. The default threshold of 0.5 is considered right now to calculating F1 scores for all considered models. 
 - Different models are suggesting different importances for different features. Looking at feature importance plots, some of the important features are the average number of sessions per day, the fraction of submit downgrade activity, and user age.
@@ -47,6 +47,11 @@ The files structure is arranged as below:
 
 ![alt text](https://github.com/ankitaggarwal64/Customer-Churn-Prediction-for-Digital-Music-Service-with-PySpark/blob/main/results_summary.PNG)
   
+## Results Summary complete datals.
+- Based on training with complete data(12GB and 26M rows), our performance metric F1 improved for all models. The Gradient boosted trees performed best with F1 score of 0.55.
+
+![alt text](https://github.com/ankitaggarwal64/Customer-Churn-Prediction-for-Digital-Music-Service-with-PySpark/blob/main/results_summary_BigData.PNG)
+
 ## Acknowledgements <a name="Acknowledgements"></a>
 The 'medium-sparkify-event-data.json' dataset has been provided by [Udacity](https://www.udacity.com/) 
 
