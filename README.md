@@ -52,6 +52,5 @@ The files structure is arranged as below:
 
 ![alt text](https://github.com/ankitaggarwal64/Customer-Churn-Prediction-for-Digital-Music-Service-with-PySpark/blob/main/results_summary_BigData.PNG)
 
-## Acknowledgements <a name="Acknowledgements"></a>
-The dataset has been provided by [Udacity](https://www.udacity.com/) 
+
 
